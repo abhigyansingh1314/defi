@@ -1,109 +1,152 @@
-# MINTSEM
-## Academic Records Authentication System using Blockchain and NFTs
+<div align="center">
 
-## Overview
+# 🎓 MINTSEM
 
-This project aims to leverage blockchain technology and Non-Fungible Tokens (NFTs) to create a secure and immutable system for managing academic records. By utilizing IPFS for decentralized file storage and genAI for NFT generation, the system ensures the integrity and credibility of academic documents while enabling easy verification by users and third-party entities.
+### Academic Records Authentication System using Blockchain and NFTs
 
-## Features
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=6C63FF&center=true&vCenter=true&width=600&lines=Decentralized+Academic+Records;Blockchain+%2B+NFTs+%2B+IPFS;Secure.+Immutable.+Verifiable." alt="Typing SVG" />
 
--   **Decentralized Storage**: Academic records (grade cards) are stored on IPFS, providing decentralized and tamper-proof storage.
--   **NFT Creation**: NFTs are minted for each academic record using deployed smart contracts Starton, and the required image is generated using genAI, linking them to the corresponding IPFS address.
--   **Immutable Records**: Utilizing blockchain technology, academic records become immutable, preventing unauthorized modifications.
--   **Transparency**: Any changes made to academic records by the issuing organization are recorded on the blockchain, providing transparency.
--   **Verification**: Users can easily verify their academic credentials by presenting their NFTs, which are cryptographically linked to their academic records.
--   **Third-party Verification**: Employers and other organizations can verify the authenticity of academic records through blockchain-based verification systems.
-- **MongoDB**: We are using MongoDB, as the database program.
+![Blockchain](https://img.shields.io/badge/Blockchain-Polygon-8247E5?style=for-the-badge&logo=polygon&logoColor=white)
+![IPFS](https://img.shields.io/badge/Storage-IPFS-65C2CB?style=for-the-badge&logo=ipfs&logoColor=white)
+![MongoDB](https://img.shields.io/badge/Database-MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![React](https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Node](https://img.shields.io/badge/Backend-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
 
-## Implementation
+![Maintained](https://img.shields.io/badge/Maintained%20by-Abhigyan%20Singh-FF6B6B?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
 
-1.  **IPFS Integration**: Academic records are uploaded to IPFS, and the generated CID (Content IDentifier) is stored.
-2.  **NFT Generation**: NFTs are created for each academic record using genAI, with the CID as metadata.
-3.  **Smart Contract Development**: Smart contracts are developed to manage NFT issuance and verification on the blockchain.
-4.  **User Interface**: An intuitive user interface allows students to access and manage their academic records, while also enabling verification by third parties.
-5.  **Blockchain Integration**: Integration with a blockchain network (e.g., Ethereum) ensures the immutability and transparency of academic records.
+</div>
 
+---
 
-## Usage
+## 🚀 Overview
 
-1.  **Academic Record Issuance**:
-    -   Organization X (e.g., IITG) uploads academic records to the platform, which generates corresponding NFTs.
-    -   The platform ensures that only authorized personnel from Organization X can upload and manage academic records.
-2.  **Third-party Verification**:
-    -   Third-party entities, such as employers or other educational institutions, can verify the authenticity of academic records by querying the blockchain with the provided NFTs.
-    -   They can verify the records without accessing sensitive information, ensuring privacy and security.
+MINTSEM leverages **blockchain technology** and **Non-Fungible Tokens (NFTs)** to create a secure and immutable system for managing academic records. By combining **IPFS** for decentralized file storage with **generative AI** for NFT creation, the system ensures the integrity and credibility of academic documents while enabling instant, trustless verification.
 
+---
 
-Certainly! Below, I'll provide example code snippets for each of the setup steps mentioned:
+## ✨ Features
+
+| Feature | Description |
+|---|---|
+| 🗄️ **Decentralized Storage** | Academic records stored on IPFS — tamper-proof and censorship-resistant |
+| 🎨 **AI-Generated NFTs** | Each record is minted as an NFT via Starton smart contracts, with genAI-generated artwork |
+| 🔒 **Immutable Records** | Blockchain guarantees records can't be altered after issuance |
+| 🔍 **Transparent History** | Every change made by the issuing organization is logged on-chain |
+| ✅ **Instant Verification** | Anyone can verify a credential by checking its NFT |
+| 🤝 **Third-Party Trust** | Employers verify authenticity without touching sensitive data |
+| 🍃 **MongoDB Backed** | Records and metadata managed through MongoDB |
+
+---
+
+## 🏗️ How It Works
+
+```mermaid
+graph LR
+    A[📄 Academic Record] --> B[📦 Upload to IPFS]
+    B --> C[🔑 Generate CID]
+    C --> D[🎨 genAI Image Creation]
+    D --> E[⛓️ Mint NFT via Smart Contract]
+    E --> F[✅ Verifiable On-Chain]
+```
+
+1. **IPFS Integration** — records uploaded to IPFS, CID generated and stored
+2. **NFT Generation** — genAI creates unique artwork per record, CID embedded as metadata
+3. **Smart Contract Minting** — NFT issuance and verification handled on-chain
+4. **User Interface** — students manage records; third parties verify with one click
+5. **Blockchain Layer** — ensures immutability and public transparency
+
+---
+
+## 🧑‍💻 Usage
+
+### Academic Record Issuance
+- An institution uploads records, which triggers NFT generation
+- Only authorized personnel can upload/manage records
+
+### Third-Party Verification
+- Employers or institutions verify authenticity by checking blockchain-linked NFTs
+- No sensitive data exposure required
+
+---
+
+## ⚙️ Setup
 
 ### 1. Install Dependencies
 
-Frontend:
+**Frontend**
 ```bash
 cd frontend
 npm install
 ```
 
-Backend:
+**Backend**
 ```bash
 cd backend
 npm install
 ```
 
-### 2. Configure IPFS
+### 2. Configure Environment Variables
 
-Ensure you have an IPFS node running on your system or use a public IPFS gateway. No code is required for this step.
+Create a `.env` file in `backend/` and `frontend/` — **never commit real secrets**:
 
+```env
+# backend/.env
+AZURE_CLIENT_ID=your_client_id
+AZURE_TENANT_ID=your_tenant_id
+AZURE_CLIENT_SECRET=your_client_secret
 
-
-### 3. Testing
-
-Test the entire system to ensure that academic records can be securely uploaded, NFTs are generated correctly, and third-party verification functions as expected. Write unit tests and integration tests for both frontend and backend components.
-
-### 4. Deployment
-
-Deploy the frontend and backend applications to your chosen hosting provider or server. Ensure that all configurations are correctly set up for the production environment.
-
-This provides an overview of the setup process with code snippets for each step. Make sure to customize the code according to your specific project requirements and chosen technologies.
-
-## How to Run
-
-To start the frontend server, run:
-
-bash
-
+# frontend/.env
+REACT_APP_STARTON_API_KEY=your_starton_key
+REACT_APP_HF_TOKEN=your_huggingface_token
 ```
-cd frontend
-npm start
-``` 
 
-To start the backend server, run:
+### 3. Configure IPFS
 
-bash
+Run a local IPFS node or use a public IPFS gateway — no code changes required.
 
-```
+### 4. Run
+
+```bash
+# Terminal 1
 cd backend
 npm start
+
+# Terminal 2
+cd frontend
+npm start
 ```
 
-## Contributors
--   Srayash Singh
--   Raunit Patel
--   Shashwat Srivastava
--   Rohit Solanki
--   Mayank 
--    Raghav Modi
--    Shrestha Pandey
--   Prem Yadav
--   Rahul Gautam
+---
 
-## Future Scope
-As of now, we are fetching data from manually created MongoDB database but in future we can use the institute database to fetch the academic records.
+## 🧪 Testing
 
+Run unit and integration tests across both frontend and backend to validate uploads, NFT minting, and verification flows before deploying.
 
+---
 
-## Acknowledgements
--   Thanks to the creators of IPFS, genAI, and blockchain technologies for providing the necessary tools and frameworks.
+## 🌱 Future Scope
 
-----------
+Currently records are pulled from a manually populated MongoDB instance. Planned: direct integration with institute databases for automated record ingestion.
 
+---
+
+## 👥 Contributors
+
+| | |
+|---|---|
+| 🧑‍💻 **Maintained by** | Abhigyan Singh — *Software Engineer* |
+| Original Contributors | Srayash Singh, Raunit Patel, Shashwat Srivastava, Rohit Solanki, Mayank, Raghav Modi, Shrestha Pandey, Prem Yadav, Rahul Gautam |
+
+---
+
+## 🙏 Acknowledgements
+
+Thanks to the creators of IPFS, genAI, and blockchain technologies that made this project possible.
+
+<div align="center">
+
+**⭐ If you found this project interesting, consider giving it a star!**
+
+</div>
