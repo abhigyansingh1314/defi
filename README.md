@@ -137,7 +137,6 @@ Currently records are pulled from a manually populated MongoDB instance. Planned
 | | |
 |---|---|
 | 🧑‍💻 **Maintained by** | Abhigyan Singh — *Software Engineer* |
-| Original Contributors | Srayash Singh, Raunit Patel, Shashwat Srivastava, Rohit Solanki, Mayank, Raghav Modi, Shrestha Pandey, Prem Yadav, Rahul Gautam |
 
 ---
 
