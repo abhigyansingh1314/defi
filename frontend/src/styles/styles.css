@@ -1,0 +1,365 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* Apply styles to the body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafafa; 
+}
+
+/* SIGN IN PAGE */
+
+.sign_in {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar_logged {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: x; */
+    background-color: #1a2954;
+    color: #1a2954;
+    margin-bottom: 0rem;
+}
+
+
+.logo_logged {
+    background-color: white;
+    
+    width: 400px;
+    height: 100px;
+    
+    margin-right: 10px;
+}
+
+.project_title_logged {
+    height: 34px;
+    flex-grow: 1;
+    font-size: 24px;
+    padding-left: 5vw;
+    font-weight: bold;
+}
+.project_title_logged p{
+    height: 34px;
+    width: 203px;
+    background-color: white;
+    color: black;
+    
+}
+
+.welcome_logged {
+    
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sign_in_details {
+    background-image: url('');
+    /* background: linear-gradient(); */
+    background-size:cover ;
+    background-position: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #0d1b2f;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    flex-direction: column;
+    margin-left: 0;
+    width:50%;
+    
+}
+
+/* LOGGED IN PAGE */
+.navbar {
+    /* background-image: url('./WhatsApp\ Image\ 2024-02-07\ at\ 19.42.05_efcd37c1.jpg');
+    background-size:cover ;
+    background-position: center; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #0f2a50;
+    color: #fff;
+}
+
+
+.logo {
+    background-color: white;
+    background-image: url('./WhatsApp\ Image\ 2024-02-07\ at\ 19.42.05_efcd37c1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 20vw;
+    height: 10vh;
+    margin-right: 10px;
+}
+
+.project_title {
+    height: 30px;
+    flex-grow: 1;
+    font-size: 20px;
+    padding-left: 5vw;
+    padding-bottom: 4.5vh;
+}
+
+
+.signin_button button {
+    flex-grow: 2;
+    padding: 10px 20px;
+    background-color: white;
+    color:black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.logged_details{
+    display: flex;
+    align-items: center;
+}
+.first_box{
+    width: 50vw;
+}
+.result{
+    width:253px;
+    height: 253px;
+    background-color: purple;
+}
+.second_box{
+    width:253px;
+    height: 253px;
+    width: 50vw;
+}
+.nft_image{
+    width:253px;
+    height: 253px;
+    background-color: purple;
+}
+
+.signin_button button{
+    background-color: white;
+    color:black;
+}
+.project_title p{
+    background-color: #fff;
+    color: black;
+    width: 20vw;
+    text-align: center;
+    border-radius: 5%;
+}
+#fruits{
+    cursor: pointer;
+    width:170px;
+    height: 38px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: medium;
+    color: black;
+    border: none; 
+    border-bottom: 2px solid #ccc; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 8px;
+     margin-top: 10px;;
+}
+.login_section{
+    display: flex;
+    align-items: center;
+
+}
+.log_out button{
+    border-radius: 3px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    height:50px;
+    cursor: pointer;
+}
+.logged_details{
+    margin:50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+.first_box,.second_box,.third_box{
+    width:400px;
+    height: 400px;
+    
+}
+.result{
+    padding: 20px;
+    width:400px;
+    height: 400px;
+    background-color: #1081a7;
+    border-radius: 30px;
+    justify-content: center;
+    text-align: left;
+    
+}
+.nft_image{
+    width:430px;
+    height: 430px;
+    background-color: #1081a7;
+    border-radius: 30px;
+}
+
+.generate{
+    width:150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(0, 204, 204);
+    font-size: medium;
+    color: black;
+    border: none; 
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+    outline: green;
+    margin-top: 10px;
+     margin-left: 20px;
+     cursor: pointer;
+}
+
+.semester{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.mint_nft{
+    width:150px;
+    height: 38px;
+    border-radius: 10px;
+    background-color: rgb(0, 204, 204);
+    font-size: medium;
+    color: black;                                                                                                                                                                                                                                     
+    border: none; 
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+    outline: green;
+     margin-top: 10px;                                                                                                                                                                                                                             
+     margin-left: 140px;
+     cursor: pointer;
+     
+}
+/* .sign_in_details p{
+    height: 50vh;
+    width:50vw;
+    background-color: #0f2a50;
+    color: white;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    flex-direction: column;
+} */
+.sign_in_details .signin_button {
+    margin-top: 20px; /* Add margin above the button */
+}
+.description{
+        height: 100%;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: rgba(166, 173, 226, 1); */
+        text-align: center;
+        font-weight: bold;
+        font-size: large;
+        flex-direction: row;
+        height: 100%;
+       
+}
+.img{
+        flex: 1;
+        display: flex;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: large;
+        flex-direction: column;
+        height: 100%;
+        width:50%;
+        animation: fadeAnimation 5s infinite;
+    }
+    @keyframes fadeAnimation {
+        0%, 50% {
+          background-image: url('./maximalfocus-VT4rx775FT4-unsplash.jpg');
+        }
+        50.1%,100% {
+          background-image: url('./design.jpg');
+        }
+      }
+    .sign_in_details {
+        padding: 2px;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: large;
+        flex-direction: column;
+        height: 100%;
+        width:50%;
+        
+    }
+.login_details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+}
+.generated_image{
+    border-radius: 30px;
+    width:430px;
+    height: 430px;
+}
+.sign_in_details button{
+    background-color: blue;
+    color: white;
+    height:40px;
+}
+.Wallet {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box; 
+    margin-top: 10px;
+  }
+  .details,.semester_name{
+    margin-top: 40px;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+  .transaction_website{
+    text-decoration: none;
+    
+  }
